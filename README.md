@@ -111,7 +111,7 @@ Tvým cílem je vytvořit stránku, která bude zobrazovat přehled filmů, kter
 	}
 	```
 
-	Přemapuj toto pole na Reactí **seznam**. Každá položka v seznamu bude tvořená komponentou `Movie`, kterou jsem vytvořili již dříve. Do komponenty předej příslušné **props**.
+	Přemapuj toto pole na Reactí **seznam komponent**. Každá položka v seznamu bude tvořená komponentou `Movie`, kterou jsem vytvořili již dříve. Do komponenty předej příslušné **props**.
 
 	React ti pravděpodobně bude v konzoli prohlížeče vyhrožovat, že každá položka v seznamu by měla mít unikátní `key`. Podívej se do dat, která z vlastností filmu by se pro to nejvíc hodila.
 
@@ -149,7 +149,7 @@ Tvým cílem je vytvořit stránku, která bude zobrazovat přehled filmů, kter
 
 	Jako `key` pro položky v seznamu můžeš použít jméno herce.
 
-12. Nebojíš-li se CSS, všechny komponenty nastyluj tak, aby stránka hezky vypadala. Třeba jako na obrázku na začátku tohoto návodu.
+12. Nebojíš-li se CSS, všechny komponenty nastyluj tak, aby stránka hezky vypadala. Třeba jako na obrázku na začátku tohoto návodu. Nebo si vymysli a nákoduj vlastní vzhled.
 
 13. Nezapomeň udělat `git commit` a potom `push` do GitHub repozitáře. Odkaz na repozitář odevzdej jako řešení úkolu.
 
