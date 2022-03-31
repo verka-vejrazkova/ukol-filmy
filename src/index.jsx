@@ -2,15 +2,28 @@ import React from 'react';
 import { render } from 'react-dom';
 import './style.css';
 
-import camera from './img/camera.svg';
 
-const App = () => (
+import Header from './Header';
+import movies from './movies';
+
+const App = () => {
+  return (
   <>
-    <h1>
-      <img class="logo" src={camera} alt="Logo" />
-      V našem kině právě uvádíme
-    </h1>
+    {
+      movies.map(
+        movieObject => <Movie 
+                         title={movieObject.title}
+                         poster={movieObject.poster}
+                         year={movieObject.year}
+                         rating={movieObject.rating}
+                         director={movieObject.director}
+                         genre={movieObject.genre}
+                         cast={movieObject.cast}
+                         />
+      )
+
+    }
   </>
 );
 
-render(<App />, document.querySelector('#app'));
+2
