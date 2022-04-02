@@ -1,7 +1,6 @@
 import React from 'react';
 import './style.css';
 
-import camera from '../assets/camera.svg'
 
 const Header = ({camera}) => {
 
