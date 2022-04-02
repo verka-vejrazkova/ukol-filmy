@@ -11,12 +11,11 @@ import movies from './movies';
 
 const App = () => {
   return (
-  <>
-
-    <Header image={camera}/>
+  <>  
+      <Header image={camera}/>
     {
       movies.map(
-        movieObject => <Movie 
+        movieObject => <Movies
                          title={movieObject.title}
                          poster={movieObject.poster}
                          year={movieObject.year}
