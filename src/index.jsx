@@ -2,18 +2,14 @@ import React from 'react';
 import { render } from 'react-dom';
 import './style.css';
 
-
-import camera from './Header/img/camera.svg'
-
-
 import Header from './Header';
 import movies from './movies';
 
 const App = () => {
   return (
   <>  
-      <Header image={camera}/>
-    {
+      <Header/>
+{/*        {  
       movies.map(
         movieObject => <Movies
                          title={movieObject.title}
@@ -26,7 +22,7 @@ const App = () => {
                          />
       )
 
-    }
+    }  */}
   </>
 );
   }
