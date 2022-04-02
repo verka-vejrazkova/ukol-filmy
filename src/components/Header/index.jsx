@@ -1,10 +1,10 @@
 import React from 'react';
 import './style.css';
 
-import camera from './img/camera.svg';
+import camera from '../Header/img/camera.svg';
 
 
-const Header = (camera) => {
+const Header = () => {
 
     return (
         <>
