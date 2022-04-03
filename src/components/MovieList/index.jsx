@@ -18,7 +18,6 @@ const MovieList = ({movie}) => {
                            rating={movieObject.rating}
                            director={movieObject.director}
                            genre={movieObject.genre}
-                           cast={movieObject.cast}
                            />
         )}  
         </>
