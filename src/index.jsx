@@ -8,6 +8,8 @@ import MovieList from './components/MovieList';
 import movies from '../src/movies.js';
 
 
+
+
 const App = () => {
   return (
   <>  
