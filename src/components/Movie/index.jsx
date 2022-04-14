@@ -1,8 +1,6 @@
 import React from 'react';
-import movies from '../../movies';
+import { movies } from './movies.js';
 import './style.css';
-
-const movies = [];
 
 
 const Movie = () => {
