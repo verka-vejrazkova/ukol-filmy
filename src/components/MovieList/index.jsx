@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
-import movies from '../../movies';
+import { movies } from '../../movies';
+
 import Movie from '../Movie';
 
 

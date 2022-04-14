@@ -3,6 +3,7 @@ import './style.css';
 
 
 
+
 const Movie = ({ id, title, poster, year, rating, genre, director }) => {
 
         return (
@@ -19,6 +20,6 @@ const Movie = ({ id, title, poster, year, rating, genre, director }) => {
                 </div>
               );
 
-        }
+        };
 
 export default Movie;
