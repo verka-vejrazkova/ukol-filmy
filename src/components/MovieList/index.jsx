@@ -1,23 +1,32 @@
 import React from 'react';
 import './style.css';
-import { movies } from './movies.js';
+import movies from '../../movies';
+import Movie from '../Movie';
 
 
 
-const MovieList = ({ id, title, poster, year, rating, genre, director })=> {
-  return (
-    <div className="movie">
-      <h2 className="movie__title">{title}</h2>
-      <img src={poster} alt={poster} />
-      <div>
-        <p>{id}</p>
-        <p>Ročník: {year}</p>
-        <p>Hodnocení: {rating}</p>
-        <p>Žánr: {genre}</p>
-        <p>Režisér: {director}</p>
-      </div>
-    </div>
-  );
+
+const MovieList = ({movies})=> {
+  <div className="movie">
+    Dnes hrajeme
+    { movies.map((movie) =>  {
+        return <Movie
+          key={movie.id}
+          title={movie.title}
+          poster={movie.poster}
+          year={movie.year}
+          rating={movie.rating}
+          director={movie.director}
+          genre={movie.genre} 
+        />
+      }
+
+    )
+
+    }
+
+
+  </div>
 };
 
 
