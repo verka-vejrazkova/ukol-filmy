@@ -4,7 +4,6 @@ import './style.css';
 import movies from './movies.js';
 
 import Header from './components/Header';
-import Movie from './components/Movie';
 import MovieList from './components/MovieList';
 
 import movies from './movies';
