@@ -2,27 +2,21 @@ import React from 'react';
 import './style.css';
 
 
-const movies = [];
 
-function MovieList({ movie }) {
-
-
+const MovieList = ({ id, title, poster, year, rating, genre, director })=> {
   return (
-    <>
-      {movies.map(
-        movieObject => <Movies
-          title={movieObject.title}
-          poster={movieObject.poster}
-          year={movieObject.year}
-          rating={movieObject.rating}
-          director={movieObject.director}
-          genre={movieObject.genre} />
-      )}
-    </>
-
+    <div className="movie">
+      <h2 className="movie__title">{title}</h2>
+      <img src={poster} alt={poster} />
+      <div>
+        <p>Ročník: {year}</p>
+        <p>Hodnocení: {rating}</p>
+        <p>Žánr: {genre}</p>
+        <p>Režisér: {director}</p>
+      </div>
+    </div>
   );
-
-}
+};
 
 
 export default MovieList;
